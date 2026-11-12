@@ -1,0 +1,13 @@
+package com.edison.curso.springboot.app.springboot_crud.services;
+
+import java.util.List;
+
+import com.edison.curso.springboot.app.springboot_crud.models.User;
+
+public interface UserService {
+
+    List<User> findAll();
+    User save(User user);    
+    boolean existsByUsername(String username);
+
+} 
